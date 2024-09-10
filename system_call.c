@@ -12,10 +12,10 @@
 #include <stdio.h>
 
 /**
- * 
- *
- *
- *
+ * Le main écrie les commandes suivante, sur le terminal :
+ * "processus 1", "sleep 10" -> qui crée un temp d'attente de 10 secondes,
+ * "processus 3", "sleep 5" -> qui crée un temp d'attente de 5 secondes et "processus 5".
+ * Finalement, le texte "terminé" est affiché.
  * @return     0 
  */
 int main() {
