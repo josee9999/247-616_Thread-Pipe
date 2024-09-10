@@ -43,10 +43,16 @@ int main()
     pid = fork();
 
     // Appel fonction Enfant
-
-
+    if(pid == 0)
+    {
+        codeDuProcessusEnfant();
+    }
     // Appel fonction Parent
-
+    else
+    {
+        codeDuProcessusParent();
+        wait(NULL);
+    }
     
     return 0;
 }

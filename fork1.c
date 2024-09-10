@@ -16,9 +16,13 @@
 
 int main() 
 {
-pid_t pid;
-pid = fork();
-printf("Je suis le processus: %d\n", pid);
-
-return 0;
+    pid_t pid;
+    pid = fork();
+    if(pid != 0)
+    {
+        printf("Je suis le processus: %d\n", pid);
+    } else {
+        printf("Ceci est le processus: %d\n", pid);
+    }
+    return 0;
 }
